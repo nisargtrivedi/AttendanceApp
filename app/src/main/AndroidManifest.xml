@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.app.collegeattendance">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <dist:module dist:instant="true" />
+
+
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <application
+        android:name=".student.CustomApplication"
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+        <activity android:name=".MainActivity" android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+        <activity android:name=".SelectionActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".student.StudentLogin" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".student.StudentDashboard" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name=".student.StudentEvent" android:screenOrientation="portrait" android:label="Event" android:parentActivityName=".student.StudentDashboard"></activity>
+        <activity android:name=".student.StudentAnnouncement" android:screenOrientation="portrait" android:label="Announcement" android:parentActivityName=".student.StudentDashboard"></activity>
+        <activity android:name=".student.StudentTimeTable" android:screenOrientation="portrait" android:label="Time Table" android:parentActivityName=".student.StudentDashboard"></activity>
+        <activity android:name=".student.StudentProfile" android:screenOrientation="portrait" android:label="Profile" android:parentActivityName=".student.StudentDashboard"></activity>
+    <activity android:name=".student.AttendanceActivity" android:screenOrientation="portrait" android:label="Profile" android:parentActivityName=".student.StudentDashboard"></activity>
+        <activity android:name=".student.StudentAttendance" android:screenOrientation="portrait" android:label="Attendance" android:parentActivityName=".student.StudentDashboard"></activity>
+        <activity android:name=".student.StudentRegistration" android:screenOrientation="portrait">
+
+
+        </activity>
+        <activity android:name=".Report" android:label="Attendance Report" android:screenOrientation="portrait" android:parentActivityName=".student.StudentDashboard"></activity>
+    </application>
+
+</manifest>

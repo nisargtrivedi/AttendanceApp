@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:fontFamily="@font/f"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Choose Account Type"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:scaleType="centerInside"
+            android:id="@+id/teacher"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:src="@drawable/teacher_btn_selector" />
+
+        <ImageView
+            android:scaleType="centerInside"
+            android:id="@+id/student"
+            android:layout_weight="1"
+            android:layout_toRightOf="@+id/parents"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:src="@drawable/student_btn_selector" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGo"
+        android:layout_margin="20dp"
+        android:text="GO"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="@font/f"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></androidx.appcompat.widget.AppCompatButton>
+</LinearLayout>

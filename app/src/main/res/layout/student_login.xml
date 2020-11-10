@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textStyle="bold"
+        android:fontFamily="@font/f"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Student Login" />
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        android:id="@+id/teacher"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:src="@drawable/student_btn_selector" />
+
+    <EditText
+        android:inputType="number"
+        android:maxLength="12"
+        android:fontFamily="@font/f"
+        android:id="@+id/edtUsername"
+        android:textColor="@color/black"
+        android:paddingLeft="10dp"
+        android:hint="Enter Student Enroll Number"
+        android:background="@drawable/border"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></EditText>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignIn"
+        android:layout_margin="10dp"
+        android:text="Sign In"
+        android:textStyle="bold"
+        android:fontFamily="@font/f"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignUp"
+        android:layout_margin="10dp"
+        android:text="Sign Up"
+        android:textStyle="bold"
+        android:fontFamily="@font/f"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></androidx.appcompat.widget.AppCompatButton>
+</LinearLayout>

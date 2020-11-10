@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_margin="10dp"
+        android:fontFamily="@font/f"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="Full Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+    <EditText
+        android:enabled="false"
+        android:singleLine="true"
+        android:id="@+id/edtFullname"
+        android:paddingLeft="10dp"
+        android:hint="Full name"
+        android:background="@drawable/border"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></EditText>
+    <TextView
+        android:layout_margin="10dp"
+        android:fontFamily="@font/f"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="Enroll Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+    <EditText
+        android:enabled="false"
+        android:singleLine="true"
+        android:id="@+id/edtEnroll"
+        android:paddingLeft="10dp"
+        android:hint="Enrollment No"
+        android:background="@drawable/border"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></EditText>
+    <TextView
+        android:layout_margin="10dp"
+        android:fontFamily="@font/f"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="Photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ImageView>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:fontFamily="@font/f"
+        android:textColor="@color/white"
+        android:text="Update"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></Button>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/tvDName"
+    android:background="@drawable/border"
+    android:gravity="center|left"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:fontFamily="@font/f"
+        android:gravity="center|left"
+        android:text=""
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"></TextView>
+
+
+    <TextView
+        android:fontFamily="@font/f"
+        android:minHeight="80dp"
+        android:paddingLeft="10dp"
+        android:gravity="center|left"
+        android:textColor="@color/black"
+        android:id="@+id/tvDetails"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+</LinearLayout>
+<!--<TextView-->
+<!--android:gravity="center"-->
+<!--android:textColor="@color/black"-->
+<!--android:id="@+id/tvFaculty"-->
+<!--android:layout_weight="1"-->
+<!--android:layout_width="0dp"-->
+<!--android:layout_height="40dp"></TextView>-->
